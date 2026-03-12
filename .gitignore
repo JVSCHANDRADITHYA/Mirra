@@ -1,0 +1,6 @@
+/output/
+*.log
+*.html
+*.json
+/pycache__/
+*.pyc
