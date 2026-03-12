@@ -1,4 +1,4 @@
-# 🌐 Site Builder — LangGraph + Ollama
+# Mirra - Shape Any website to your content
 
 > *Give it any URL → scrapes the style → HIL content collection → generates your site*
 
