@@ -1,31 +1,12 @@
 # 🌐 Site Builder — LangGraph + Ollama
 
-> Give it any URL → scrapes the style → HIL content collection → generates your site
+> *Give it any URL → scrapes the style → HIL content collection → generates your site*
 
 
 
 ## Architecture
 
-```
-URL → [Scrape Agent] → [Styling Agent] → [Structure Agent]
-                                               ↓
-                                    ⏸ HIL Checkpoint #1
-                                    (approve structure)
-                                               ↓
-                                       [Content Agent]
-                                    (collect your content)
-                                    ⏸ HIL Checkpoint #2
-                                    (approve content)
-                                               ↓
-                                      [Assembly Agent]
-                                               ↓
-                                    [Verification Agent]
-                                      ↓           ↓
-                                    PASS        FAIL (retry ×2)
-                                      ↓
-                                  output/site.html
-```
-
+![alt text](assets/architecture.png)
 ## Setup
 
 ```bash
